@@ -11,7 +11,7 @@
     "lint": "eslint --fix --ext .js,.jsx .",
     "eslint": "eslint --ext .js,.jsx .",
     "build": "webpack --mode production",
-    "test:e2e": "npx cypress run"
+    "test:e2e": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -50,7 +50,8 @@
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "cypress": "^10.0.3"
   },
   "dependencies": {
     "axios": "^0.19.2",
