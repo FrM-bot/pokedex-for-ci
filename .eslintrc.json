@@ -3,7 +3,8 @@
     "browser": true,
     "es6": true,
     "jest/globals": true,
-    "node": true
+    "node": true,
+    "cypress/globals": true
   },
   "extends": ["plugin:react/recommended", "standard"],
   "globals": {
@@ -19,7 +20,6 @@
   },
   "plugins": ["react", "jest"],
   "rules": {
-    "react/react-in-jsx-scope": "off",
     "react/prop-types": "off"
   }
 }

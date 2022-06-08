@@ -17,7 +17,19 @@ jobs:
           node-version: 16.15.1
       - name: Instalando dependencias
         run: |
-          npm install
+          npm install --no-optional --no-audit --no-fund
       - name: Linter
         run: |
           npm run eslint
+      - name: Tests Unitarios
+        run: |
+          npm test
+      - name: Compilando
+        run: |
+          npm run build
+      - name: E2E Tests
+        uses: cypress-io/github-action@v4
+        with:
+          command: npm run test:e2e
+          start: npm run start-test
+          wait-on: http://localhost:5000
